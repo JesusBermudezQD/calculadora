@@ -105,7 +105,8 @@ document.addEventListener("DOMContentLoaded",(e)=>{
     function cambiarSigno(signo){
         if(signo==="-"){
             if(resultado.innerHTML.charAt(0)==="-"){
-                resultado.innerHTML=resultado.innerHTML.charAt(1,resultado.innerHTML.length-1);
+                /* resultado.innerHTML=resultado.innerHTML.charAt(1,resultado.innerHTML.length-1); */
+                resultado.innerHTML=resultado.innerHTML.replace(resultado.innerHTML.charAt(0),"");
             }else{
                 resultado.innerHTML="-"+resultado.innerHTML;
             }
